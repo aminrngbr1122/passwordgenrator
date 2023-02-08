@@ -100,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }, false);
 
         const randomString = (intpass = 9) => {
-            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}<>,.?/\\|";
+            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678982738272826!@#$%^&*()_+-=[]{}<>,.?/\\|";
             let result = "";
             for (let i = 0; i < intpass; i++) {
                 result += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -108,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             document.getElementById('passtag').textContent = result;
         }
 
-        randomString(12)
+        randomString(17)
 
     </script>
 
