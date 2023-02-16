@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="fa">
+   <head>
+      <!-- Title Tag -->
+      <title>Password generator</title>
 
-<head>
+      <!-- Description Tag -->
+      <meta
+         name="description"
+         content="A password generator is a tool that creates a unique and secure password for users to protect their online accounts. These generators often use a combination of letters, numbers, and symbols to create a password that is difficult for hackers to guess. By using a password generator, users can ensure that their personal information and accounts are kept safe from cyber threats."
+      />
 
-    <!-- Title Tag -->
-    <title>Password generator</title>
+      <!-- Robots Tag -->
+      <meta name="robots" content="index,follow" />
 
-    <!-- Description Tag -->
-    <meta name="description" content="A password generator is a tool that creates a unique and secure password for users to protect their online accounts. These generators often use a combination of letters, numbers, and symbols to create a password that is difficult for hackers to guess. By using a password generator, users can ensure that their personal information and accounts are kept safe from cyber threats.">
+      <!-- Canonical Tag -->
+      <link rel="canonical" href="https://aminrngbr1122.github.io/passwordgenrator" />
 
-    <!-- Robots Tag -->
-    <meta name="robots" content="index,follow">
+      <!-- Viewport Tag -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://aminrngbr1122.github.io/passwordgenrator">
+      <!-- Hreflang Tag -->
+      <link rel="alternate" href="https://github.com" hreflang="fa-ir" />
 
-    <!-- Viewport Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Open Graph Tags -->
+      <meta property="og:title" content="Password generator" />
+      <meta
+         property="og:description"
+         content="A password generator is a tool that creates a unique and secure password for users to protect their online accounts. These generators often use a combination of letters, numbers, and symbols to create a password that is difficult for hackers to guess. By using a password generator, users can ensure that their personal information and accounts are kept safe from cyber threats."
+      />
+      <meta property="og:url" content="https://aminrngbr1122.github.io/passwordgenrator" />
+      <meta property="og:type" content="website-tools" />
 
-    <!-- Hreflang Tag -->
-    <link rel="alternate" href="https://github.com" hreflang="fa-ir">
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Password generator">
-    <meta property="og:description" content="A password generator is a tool that creates a unique and secure password for users to protect their online accounts. These generators often use a combination of letters, numbers, and symbols to create a password that is difficult for hackers to guess. By using a password generator, users can ensure that their personal information and accounts are kept safe from cyber threats.">
-    <meta property="og:url" content="https://aminrngbr1122.github.io/passwordgenrator">
-    <meta property="og:type" content="website-tools">
-
-    <style>
-        #pass {
+      <style>
+         #pass {
             text-align: center;
             text-justify: center;
             font-weight: bold;
             color: #0496eb;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             line-height: 13vh;
-        }
-        #copyr{
+         }
+         #copyr {
             position: relative;
             top: 71vh;
-            text-align:center;
+            text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size:15px;
-        }
-       @media only screen and (max-width: 768px){
-        #copyr{
-            position: relative;
-            top: 63vh;
-            text-align:center;
-            font-weight:bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size:15px;
-        }
-}
-    </style>
+            font-size: 15px;
+         }
+         @media only screen and (max-width: 768px) {
+            #copyr {
+               position: relative;
+               top: 63vh;
+               text-align: center;
+               font-weight: bold;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-size: 15px;
+            }
+         }
+      </style>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDMHV8T"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDMHV8T" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+   </head>
 
-</head>
+   <body>
+      <div id="pass">
+         <h2 id="passtag"></h2>
+      </div>
 
-<body>
+      <footer>
+         <p id="copyr">Copyright © 2023 https://github.com/aminrngbr1122 or Password generator All rights reserved.</p>
+      </footer>
 
-    <div id="pass">
-        <h2 id="passtag"></h2>
-    </div>
-
-    <footer>
-        <p id="copyr">Copyright © 2023 https://github.com/aminrngbr1122 or Password generator All rights reserved.</p>
-    </footer>
-
-    <script>
-
-        window.onload = function() {
+      <script>
+         window.onload = function () {
             const URL = "https://github.com/aminrngbr1122";
             window.open(URL, "_blank");
-          };  
+         };
 
-          function copyToClipboard(text) {
+         function copyToClipboard(text) {
             const tempInput = document.createElement("input");
             tempInput.style = "position: absolute; left: -1000px; top: -1000px";
             tempInput.value = text;
@@ -88,30 +88,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             document.execCommand("copy");
             document.body.removeChild(tempInput);
             alert("Password has been copied to the clipboard!");
-          }
-          
-          document.querySelector("#pass").addEventListener("click", function() {
-            const textToCopy = document.getElementById('pass').innerText;
+         }
+
+         document.querySelector("#pass").addEventListener("click", function () {
+            const textToCopy = document.getElementById("pass").innerText;
             copyToClipboard(textToCopy);
-          });
+         });
 
-        document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        }, false);
+         document.addEventListener(
+            "contextmenu",
+            function (e) {
+               e.preventDefault();
+            },
+            false
+         );
 
-        const randomString = (intpass = 9) => {
+         const randomString = (intpass = 9) => {
             const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678982738272826!@#$%^&*()_+-=[]{}<>,.?/\\|";
             let result = "";
             for (let i = 0; i < intpass; i++) {
-                result += chars.charAt(Math.floor(Math.random() * chars.length));
+               result += chars.charAt(Math.floor(Math.random() * chars.length));
             }
-            document.getElementById('passtag').textContent = result;
-        }
+            document.getElementById("passtag").textContent = result;
+         };
 
-        randomString(17)
-
-    </script>
-
-</body>
-
+         randomString(17);
+      </script>
+   </body>
 </html>
