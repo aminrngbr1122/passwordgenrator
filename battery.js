@@ -1,5 +1,6 @@
 
     (function () {document.querySelectorAll("Battery").forEach(async (ele) => {
+        console.log("Github: aminrngbr1122");
         await navigator
             .getBattery()
             .then(function (battery) {
@@ -9,4 +10,4 @@
                 ele.innerHTML = "Your browser app does not support the battery api !";
             });
     });
-                 });
+                 })();
